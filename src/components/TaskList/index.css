@@ -1,0 +1,18 @@
+
+.task_items{
+    font-family:'Roboto' ;
+    border-radius: 5px;
+    list-style: none;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.task_items h1{
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
