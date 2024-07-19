@@ -1,7 +1,7 @@
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
-import TaskInput from "../TaskInput";
-import TaskList from "../TaskList";
+import TaskInput from "../TaskInput/index.js";
+import TaskList from "../TaskList/index.js";
 import React, { useState,  useEffect } from "react";
 
 export const TaskContext = React.createContext();

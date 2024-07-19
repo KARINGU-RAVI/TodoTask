@@ -1,7 +1,7 @@
 import { AiFillDelete } from "react-icons/ai";
 import { FaEdit } from "react-icons/fa";
 import "./index.css";
-import { TaskContext } from "../TaskApp";
+import { TaskContext } from "../TaskApp/index.js";
 import { useContext, useState } from "react";
 
 /**

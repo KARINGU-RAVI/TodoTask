@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { TaskContext } from "../TaskApp";
-import TaskItem from "../TaskItem";
+import { TaskContext } from "../TaskApp/index.js";
+import TaskItem from "../TaskItem/index.js";
 
 import "./index.css";
 /**

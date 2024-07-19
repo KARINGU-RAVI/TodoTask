@@ -1,4 +1,4 @@
-import TaskApp from "./components/TaskApp";
+import TaskApp from "./components/TaskApp/index.js";
 import "./App.css";
 
 function App() {

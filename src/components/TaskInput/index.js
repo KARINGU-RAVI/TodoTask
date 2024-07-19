@@ -1,4 +1,4 @@
-import { TaskContext } from "../TaskApp";
+import { TaskContext } from "../TaskApp/index.js";
 import { useContext, } from "react";
 import { v4 } from "uuid";
 import "./index.css";
