@@ -9,7 +9,7 @@ import { useContext, useState } from "react";
  * @param {Object} eachTask - An object containing the task details.
  * @returns JSX element representing the task item.
  */
-const TaskItem = ({ eachTask }) => {
+export default function TaskItem({ eachTask }) {
   const { delelteTask, editTask } = useContext(TaskContext);
   const [status, setStatus] = useState(false);
   const { id, task } = eachTask;
@@ -46,4 +46,4 @@ const TaskItem = ({ eachTask }) => {
   );
 };
 
-export default TaskItem;
+

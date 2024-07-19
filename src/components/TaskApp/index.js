@@ -14,7 +14,7 @@ export const TaskContext = React.createContext();
  * Functional component for a Task App that manages task input, task list, and editing tasks.
  * @returns JSX element for the Task App component.
  */
-const TaskApp = () => {
+export default function TaskApp() {
   const [inputData, setInputData] = useState("");
   const [taskList, setTaskList] = useState(
     JSON.parse(localStorage.getItem("task_list"))
@@ -58,4 +58,3 @@ const TaskApp = () => {
     </TaskContext.Provider>
   );
 };
-export default TaskApp;

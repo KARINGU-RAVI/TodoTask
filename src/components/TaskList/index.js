@@ -7,7 +7,7 @@ import "./index.css";
  * Functional component that displays a list of tasks from the TaskContext.
  * @returns JSX element displaying the list of tasks
  */
-const TaskList = () => {
+export default function TaskList() {
   const { taskList } = useContext(TaskContext);
 
   return (
@@ -25,4 +25,3 @@ const TaskList = () => {
   );
 };
 
-export default TaskList;

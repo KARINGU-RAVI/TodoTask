@@ -5,7 +5,7 @@ import "./index.css";
 import { GrUpdate } from "react-icons/gr";
 import { MdOutlineAddTask } from "react-icons/md";
 
-const TaskInput = () => {
+export default function TaskInput()  {
   const { setInputData, setTaskList, editId, taskList, setEditId, inputData } =
     useContext(TaskContext);
 
@@ -65,4 +65,3 @@ const TaskInput = () => {
 }
 
 
-export default TaskInput;
