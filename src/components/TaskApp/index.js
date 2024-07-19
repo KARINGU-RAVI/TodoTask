@@ -2,7 +2,7 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import TaskInput from "../TaskInput/index.js";
 import TaskList from "../TaskList/index.js";
-import React, { useState,  useEffect } from "react";
+import React, { useState } from "react";
 
 export const TaskContext = React.createContext();
 
@@ -16,22 +16,13 @@ export const TaskContext = React.createContext();
  */
 export default function TaskApp() {
   const [inputData, setInputData] = useState("");
-  const [taskList, setTaskList] = useState(
-    JSON.parse(localStorage.getItem("task_list"))
-  );
+  const [taskList, setTaskList] = useState([]);
   const [editId, setEditId] = useState(0);
 
   const delelteTask = (id) => {
     const filteredData = taskList.filter((each) => each.id !== id);
     setTaskList(filteredData);
   };
-
-  
-  useEffect(() => {
-    const data = JSON.stringify(taskList);
-    localStorage.setItem("task_list", data);
-  }, [taskList]);
-
   const editTask = (id) => {
     const temp = taskList.find((each) => each.id === id);
     setInputData(temp.task);
@@ -58,4 +49,4 @@ export default function TaskApp() {
       </div>
     </TaskContext.Provider>
   );
-};
+}
