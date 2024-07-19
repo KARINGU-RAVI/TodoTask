@@ -51,7 +51,7 @@ export default function TaskInput()  {
       <div className="input_block">
         <input
           value={inputData}
-          placeholder="Enter Task "
+          placeholder="Enter Task ToDo "
           onChange={onChangerenderInputDataChanged}
           className="form-control input_text"
         />
