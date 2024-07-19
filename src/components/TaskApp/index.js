@@ -26,6 +26,7 @@ export default function TaskApp() {
     setTaskList(filteredData);
   };
 
+  
   useEffect(() => {
     const data = JSON.stringify(taskList);
     localStorage.setItem("task_list", data);
